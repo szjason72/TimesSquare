@@ -2,7 +2,20 @@
 
 ## 📚 项目概述
 
-TimesSquare 是一个项目知识库管理系统，用于组织和跟踪从多个成功项目中借鉴的优秀经验和技术实现，确保知识传承和代码复用。
+**TimesSquare** 是 **GoZervi** 项目的知识库管理系统，用于组织和跟踪从多个成功项目中借鉴的优秀经验和技术实现，确保知识传承和代码复用。
+
+### 🎯 与 GoZervi 的关系
+
+- **TimesSquare** = GoZervi 的知识库和参考文档库
+- **GoZervi** = 实际的 SaaS 系统项目（微服务架构、多租户支持、AI能力集成）
+
+**TimesSquare 的作用**：
+- 📖 收集和分析其他项目的优秀实现（如 CordysCRM 的多租户方案）
+- 📝 整理成可复用的知识文档和代码片段
+- 🎯 为 GoZervi 的开发提供参考和指导
+- 📊 跟踪 GoZervi 的实施进度和完成度
+
+**简单来说**：TimesSquare 是"知识库"，GoZervi 是"实际项目"。TimesSquare 帮助 GoZervi 更好地实现 SaaS 系统的各项功能。
 
 ## 🎯 主要功能
 
@@ -40,11 +53,21 @@ TimesSquare/
 
 ## 🔍 参考项目分析
 
-- **CordysCRM** - 完整的多租户实现参考
-- **VueCMF** - app_id隔离模式参考
-- **凌鲨(api-server)** - 代码本地化方案参考
+TimesSquare 分析了以下项目，为 GoZervi 提供参考：
+
+- **CordysCRM** - 完整的多租户实现参考 → 已应用到 GoZervi 的 TenantContext 和 TenantMiddleware
+- **VueCMF** - app_id隔离模式参考 → 为 GoZervi 提供多租户设计思路
+- **凌鲨(api-server)** - 代码本地化方案参考 → 已应用到 GoZervi 的本地依赖管理
+- **Zervi.test** - tenant_type模式参考 → GoZervi 的前身项目经验
 
 详细分析请查看 `knowledge-base/` 目录下的相关文档。
+
+## 🔗 相关项目
+
+- **GoZervi** - 主项目：智能化 SaaS 服务系统（微服务架构、多租户、AI能力）
+  - 当前状态：88% 完成（缺少多租户支持）
+  - 目标：100% 完整的智能化 SaaS 系统
+  - TimesSquare 为其提供知识库支持和实施指导
 
 ## 📝 开发进度
 
